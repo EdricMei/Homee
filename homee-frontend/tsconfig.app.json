@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // REQUIRED FIXES for project reference errors:
+    "composite": true, 
+    "noEmit": false,
+    
+    // Standard Vite Node config settings:
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["vite.config.ts"]
+}
