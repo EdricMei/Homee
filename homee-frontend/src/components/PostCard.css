@@ -1,0 +1,79 @@
+.post-card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px; /* More rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Clean, modern shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--card-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0; /* Keep top corners rounded */
+}
+
+.post-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.post-info .description {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Push footer to the bottom */
+  padding-top: 0.5rem;
+}
+
+.price {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.distance {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.verified-badge {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #e6ffe0; /* Lighter background for badge */
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  width: fit-content;
+}
